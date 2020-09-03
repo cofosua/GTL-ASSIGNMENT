@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <style type="text/css">body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+</style><style type="text/css">.search-bar {
+  width: 30rem;
+  max-width: 100%;
+  margin-bottom: 8rem;
+  border-bottom: 2px solid var(--color-tertiary);
+
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.search-bar input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: none;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+</style><style type="text/css">:root {
+  /*  COLORS  */
+  --color-primary: #ffffff;
+  --color-secondary: #111111;
+  --color-tertiary: #999999;
+  --color-dim-white: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+} */
+
+a,
+a[href=""] {
+  text-decoration: none;
+}
+</style><style type="text/css">.container {
+  width: 124rem;
+  max-width: 100%;
+  margin: 0rem auto;
+}
+@media (max-width: 1280px) {
+  .container {
+    padding: 0rem 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0rem 4rem;
+  }
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 8rem;
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  text-align: center;
+
+  height: 100%;
+  padding: 2rem;
+
+  display: grid;
+  place-content: center;
+}
+
+.navbar a.is-active {
+  border-bottom: 4px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    font-size: 1.4rem;
+  }
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 100vh;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  position: relative;
+}
+
+.title,
+.subtitle {
+  width: 60rem;
+  max-width: 100%;
+}
+
+.title {
+  font-size: 7.2rem;
+}
+
+.subtitle {
+  margin-bottom: 3rem;
+}
+</style><style type="text/css">.sample-wallpaper {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 4rem;
+  gap: 4rem;
+}
+
+.wallpaper {
+  height: 25rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.wallpaper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div class="App"><div><nav class="navbar"><div class="container"><a href="http://localhost:3000/#">Hulk</a><a href="http://localhost:3000/#" class="logo is-active">Mavel</a><a href="http://localhost:3000/#">Venom</a></div></nav><header class="header"><div class="container"><h1 class="title">Mavel's Fearless</h1><p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. beatae molestias earum eveniet.</p><div class="search-bar"><input type="search" placeholder="Search"></div><div class="sample-wallpaper"><article class="wallpaper"><img src="./HW3_files/venom-1.294dd39b.jpg" alt="Wallpaper #1" class="wallpaper"></article><article class="wallpaper"><img src="./HW3_files/hulk-1.5f1cd582.jpg" alt="Wallpaper #1" class="wallpaper"></article><article class="wallpaper"><img src="./HW3_files/venom-2.5eb62fe8.jpg" alt="Wallpaper #1" class="wallpaper"></article></div></div></header></div></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="./HW3_files/bundle.js.download"></script><script src="./HW3_files/0.chunk.js.download"></script><script src="./HW3_files/main.chunk.js.download"></script>
+
+</body></html>
